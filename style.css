@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(218, 253, 255);
+    background: rgb(18, 25, 25);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@ body{
 .progress{
     width: 0px;
     height: 100%;
-    background-color:  rgb(240, 196, 51);
+    background-color:  rgb(51, 240, 218);
     left: 0;
     transition: 0.1s;
 }
@@ -117,13 +117,13 @@ body{
 }
 .loading .textLoad{
     font-family: 'Roboto', sans-serif;
-    color: rgba(236, 150, 69, 0.967);
+    color: rgba(69, 236, 216, 0.967);
     font-family: 500;
     font-size: 20px;
     text-transform: uppercase;
 }
 .loading h2 .cricle1, .cricle2, .cricle3{
-    color: rgb(240, 196, 51);
+    color: rgb(51, 240, 234);
     opacity: 0;
 }
 .cricle1{
@@ -193,7 +193,7 @@ body{
     width: 40px;
     height: 30px;
     border-radius: 10px;
-    background-color: rgb(244,118,121);
+    background-color: rgb(118, 244, 242);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +208,7 @@ body{
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgb(244,118,121) transparent transparent transparent;
+    border-color: rgb(118, 242, 244) transparent transparent transparent;
 }
 .heartBox .heart{
     position: relative;
@@ -234,4 +234,39 @@ body{
     background-color: #fff;
     bottom: 50%;
     border-radius: 50%;
+}
+
+.greetings{
+    font-size: 7rem;
+    font-weight: 900;
+    position: absolute;
+    padding-bottom: 20%;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
 }
